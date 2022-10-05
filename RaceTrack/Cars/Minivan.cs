@@ -16,7 +16,13 @@ namespace RaceTrack.RaceTrack.Cars
 
         public override void StartEngine()
         {
-            Console.WriteLine($"The {Name} engine starts");
+            Console.WriteLine($"The{Name} starts");
+        }
+
+        public override void StopEngine()
+        {
+
+            Console.WriteLine($"{Name} comes to a stop");
         }
     }
 }

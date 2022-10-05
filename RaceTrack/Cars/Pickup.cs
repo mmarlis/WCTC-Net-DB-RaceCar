@@ -6,28 +6,28 @@ using System.Threading.Tasks;
 
 namespace RaceTrack.RaceTrack.Cars
 {
-    public class Tractor : RaceCar
+    public class Pickup : RaceCar
     {
-        public Tractor()
+        public Pickup()
         {
-            Name = "Tractor";
-            TopSpeed = 20;
+            Name = "Pickup";
+            TopSpeed = 150;
         }
 
         public override void StartEngine()
         {
-            Console.WriteLine($"The {Name} struggles to start");
+            Console.WriteLine($"{Name} revs away!");
         }
 
         public override void StopEngine()
         {
 
-            Console.WriteLine($"{Name} stops the engine");
+            Console.WriteLine($"{Name} says Home Depot is my stop.");
         }
 
         public override void Brake()
         {
-            Console.WriteLine($"The {Name} is having a hard time stopping!");
+            Console.WriteLine($"{Name} hits the breaks!!!");
             base.Brake();
         }
     }
